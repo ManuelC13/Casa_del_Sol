@@ -1,0 +1,22 @@
+/* Contenedor con scroll personalizado */
+.scroll-personalizado {
+    height: 80px; /* Altura del contenedor */
+    overflow: auto; /* Activar el scroll solo cuando sea necesario */
+}
+
+/* Personalización de la barra de desplazamiento */
+.scroll-personalizado::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+.scroll-personalizado::-webkit-scrollbar-track {
+    background: #333; /* Fondo claro de la pista */
+}
+
+.scroll-personalizado::-webkit-scrollbar-thumb {
+    background: #555; /* Color oscuro de la "barrita" de desplazamiento */
+}
+
+.scroll-personalizado::-webkit-scrollbar-thumb:hover {
+    background: #777; /* Color más oscuro al pasar el mouse */
+}

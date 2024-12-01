@@ -1,0 +1,47 @@
+/* Importación de la tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    background-color: #f4f1ea;
+    font-family: 'Poppins', sans-serif;
+}
+
+.texto-naranja {
+    color: orange;
+}
+
+.formulario-contenedor {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#formulario-registro {
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para los campos de entrada */
+.form-control {
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px orange;
+}
+
+/* Botones */
+.boton-personalizado {
+    background-color: #FFA500; 
+    border: none; 
+    color: black;
+}
+
+.boton-personalizado:hover {
+    background-color: #E64A19; 
+    color: white;
+}

@@ -1,0 +1,52 @@
+/* Importación de la tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    background-color: #f4f1ea; /* Fondo neutro claro */
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-admin {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones personalizados con base en #FFA555 */
+.boton-clientes{
+    background-color: #ffa555; /* Naranja base */
+    color: #3c4048;
+}
+
+.boton-productos {
+    background-color: #ffa555; /* Naranja base */
+    color: #3c4048; /* Gris oscuro para contraste */
+}
+
+.boton-ventas {
+    background-color: #ff7d33; /* Naranja más intenso */
+    color: #3c4048;
+}
+
+.boton-clientes:hover, .boton-productos:hover, .boton-ventas:hover {
+    background-color: black; /* Más oscuro para hover */
+    color: #fff;
+}
+
+/* Botón de peligro */
+.btn-danger {
+    background-color: #c11212; /* Rojo suave */
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #b01a1a; /* Rojo más oscuro */
+}

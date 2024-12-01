@@ -1,0 +1,102 @@
+/* Importación de la tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    /*Fondo principal*/
+    background-color: #F4F1EA;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #3c4048; /* Gris oscuro para buen contraste */
+}
+
+/* Tabla con colores oscuros */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 0.9em;
+    color: #FFFFFF; /* Texto blanco */
+    border: 1px solid #FFA555; /* Detalle naranja */
+}
+
+/* Estilos para la tabla con la clase .table-fixed */
+.table-fixed {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Encabezados pegajosos */
+.table-fixed thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Estilos comunes para celdas */
+.table-fixed th,
+.table-fixed td {
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #3c3c3c; /* Gris oscuro */
+    background-color: #F1E4D1; /* Beige claro */	
+}
+
+.table-fixed th {
+    background-color: #FFA555; /* Naranja brillante */
+    font-weight: bold;
+}
+
+/* Botones personalizados con base en #FFA555 */
+.btn {
+    border-radius: 8px;
+    padding: 0.3rem 1.2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton3 {
+    background-color: #ff7d33; /* Naranja más intenso */
+    color: black;
+}
+.boton3:hover {
+    background-color: #cc5f26; /* Tono más oscuro */
+}
+
+/* Botón de peligro */
+.btn-danger {
+    background-color: #c11212; /* Rojo suave */
+}
+.btn-danger:hover {
+    background-color: #b01a1a; /* Rojo más oscuro */
+}
+
+.dropdown-divider {
+    border-color: #FFA555;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 767px) {
+    .contenedor {
+        margin-top: 10px;
+    }
+
+    table {
+        font-size: 0.8em; /* Reduce tamaño en pantallas pequeñas */
+    }
+
+    button, a.btn {
+        padding: 8px 15px;
+        font-size: 0.9rem; /* Ajusta tamaño de botones */
+    }
+}

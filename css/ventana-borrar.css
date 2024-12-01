@@ -1,0 +1,73 @@
+.ventana-borrar {
+    background-color: beige;
+    border: solid 2px black;
+    width: 300px; /* Establecer un ancho fijo */
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px; /* Espaciado reducido */
+    min-height: 150px; /* Ajuste de altura mínima */
+    border-radius: 20px;
+    position: fixed; /* Para que la ventana permanezca centrada */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centrar en la pantalla */
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    z-index: 1000;
+}
+
+
+div {
+    box-shadow: black;
+}
+
+#cerrar {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+#cerrar img {
+    width: 20px; /* Tamaño ajustado */
+    transition: transform 0.2s;
+}
+
+#cerrar img:hover {
+    transform: scale(1.1);
+}
+
+.ventana-borrar p {
+    margin-bottom: 20px;
+    word-wrap: break-word; /* Permite que el texto se ajuste en líneas */
+}
+
+.ventana-borrar button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; /* Reducir el espaciado interno */
+    margin: 5px auto; /* Centrar los botones */
+    cursor: pointer;
+    font-size: 14px; /* Ajuste del tamaño de fuente */
+    display: block; /* Botones en líneas separadas */
+    width: 90%; /* Ancho relativo para que no se desborde */
+    max-width: 200px; /* Ancho máximo de los botones */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.ventana-borrar button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.ventana-borrar button:nth-child(2) {
+    background-color: #95a5a6;
+}
+
+.ventana-borrar button:nth-child(2):hover {
+    background-color: #7f8c8d;
+}

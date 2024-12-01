@@ -1,0 +1,148 @@
+/* Importación de la tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.fondo-negro{
+    background-color: black;
+}
+
+header {
+    height: 155px;
+}
+
+body{
+    background-color: #f4f1ea;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    z-index: 10;
+}
+
+/* Carrusel */
+#carrusel {
+    top: -60px;  /* Sube el carrusel para que se vea debajo del navbar */
+    width: 100%;
+}
+
+.contenedorImagenes{
+    height: 550px;
+}
+
+.imagenCarrusel{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+/* Tarjetas beneficios */
+.tarjeta-beneficios {
+    background-color: #fff;
+    padding: 1.5rem; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tarjeta-beneficios i {
+    font-size: 2rem; /* Tamaño del ícono */
+    color: #FFA500;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-beneficios span {
+    font-weight: 700; /* Negrita */
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta-beneficios p {
+    color: #777;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Barra de navegación */
+.menu a{
+    position: relative;
+    font-size: medium;
+}
+
+.menu a::after{ /* Linea blanca debajo de las categorias*/
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.menu a:hover::after{ 
+    opacity: 1;
+}
+
+/* Botones */
+.boton-personalizado {
+    background-color: #FFA500; 
+    border: none; 
+    color: black;
+}
+
+.boton-personalizado:hover {
+    background-color: #E64A19; 
+    color: white;
+}
+
+.boton-carrito {
+    background-color:#FFA500;
+}
+.boton-carrito:hover {
+    background-color: #eb8226;
+}
+
+/* Texto de precios y disponibilidad */
+.precios {
+    color: white;
+    font-size: 17px;
+}
+
+.disponibilidad {
+    color: lightgray;
+    font-size: 14px;
+}
+
+/* Tarjetas de productos */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+
+/* Estilos del menú desplegable */
+.dropdown-menu {
+    background-color: #292929; 
+    border: 1px solid black;
+}
+
+.dropdown-item {
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(57, 55, 55);
+    color: white;
+}

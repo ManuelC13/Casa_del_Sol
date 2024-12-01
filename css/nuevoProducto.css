@@ -1,0 +1,112 @@
+/* Importación de la tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    background-color: #f4f1ea; /* Fondo gris claro */
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Texto oscuro para buen contraste */
+}
+
+h1 {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFA500; /* Gris oscuro */
+}
+
+
+/* Formulario general */
+form {
+    max-width: 600px; /* Ancho más reducido para parecerse al diseño */
+    background-color: #FFF;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #6f6c6c; /* Borde gris claro */
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+.formProducto {
+    padding: 15px;
+    margin: 20px auto;
+}
+
+/* Contenedor de la tabla */
+.contenedor-tabla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/* Ajuste de los campos */
+.contenedor-tabla div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-tabla div label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px; /* Tamaño de fuente más pequeño */
+}
+
+.contenedor-tabla div input,
+.contenedor-tabla div select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    outline: none;
+}
+
+/* Área de cargar imágenes */
+.subir-imagen {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #000;
+    height: 150px;
+    background-color: #F4F1EA;
+    border-radius: 4px;
+    margin-top: 15px;
+    position: relative;
+}
+
+/* Botones */
+button[type="submit"] {
+    background-color: #FFA500; /* Azul brillante */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: black; /* Azul más oscuro */
+    color: #FFF;
+    transform: scale(1.03);
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .contenedor-tabla {
+        grid-template-columns: 1fr;
+    }
+
+    .subir-imagen {
+        height: 100px; /* Reducir tamaño en pantallas más pequeñas */
+    }
+}
